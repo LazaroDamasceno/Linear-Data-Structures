@@ -48,4 +48,5 @@ public class Queue {
             System.out.println("The stack is empty.");
         }
 	}
+    
 }
