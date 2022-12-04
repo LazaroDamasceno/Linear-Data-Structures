@@ -12,39 +12,39 @@ public class Stack {
 	}
 	
 	public boolean isEmpty() {
-        return stack.size() == 0;
+        	return stack.size() == 0;
 	}
 	
 	public int size() {
-        return stack.size();
+        	return stack.size();
 	}
 	
 	public List<Object> print() {
-        return stack;
+        	return stack;
 	}
 	
 	public Object get(int index) { 
-        try {
-            return stack.get(index);    
-        } catch (IndexOutOfBoundsException e) {
-            return "The given index is out of the bounds.";
-        }
+		try {
+		    return stack.get(index);    
+		} catch (IndexOutOfBoundsException e) {
+		    return "The given index is out of the bounds.";
+		}
 	}
 	
 	public void set(int index, Object object) {
-        try {
-            stack.set(index, object);
-        } catch (IndexOutOfBoundsException e) {
-            System.out.println("The given index is out of the bounds.");
-        }
+		try {
+		    stack.set(index, object);
+		} catch (IndexOutOfBoundsException e) {
+		    System.out.println("The given index is out of the bounds.");
+		}
 	}
 	
 	public void remove() {
-        if (!isEmpty()) {
-            stack.remove(stack.get(0));
-        } else {
-            System.out.println("The stack is empty.");
-        }
+		if (!isEmpty()) {
+		    stack.remove(stack.get(0));
+		} else {
+		    System.out.println("The stack is empty.");
+		}
 	}
 
 }
